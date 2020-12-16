@@ -1,15 +1,31 @@
 # new programming language that I need a name for
 Programming language that you type sentences ?
 
+### To Do
+- Come up with a name
+- Finalize the syntax
+- Figure out what programming language to write the compiler/interpreter in
+- Figure out if the lang is compiled or interpreted or both
+- Low or high level
+
+### Whats so nice about this?
+I dont know yet but here is what I can try to follow
+- Words and commas ? 
+- Readable code. Almost like it isnt even code..
+- Types or no types? idk
+- Everything is confusing right now: yes
+- You want to help? Hopefully you have knowledge on making programming langs. Ill give you a secret _join my dev discord server_ <- Im useless and didnt put a link so you can find it on my profile (btw Im insberr) 
+
+## Idea
 The idea is that it's all typed out like you are talking, or, more like writing.  
 Truly going to be hard to make a language like this, but it's worth a try.
 
 
-I want to avoid the use of : ; ( ) { }
+I want to avoid the use of : ; ( ) { } as much as possible
 
 Only an idea but here is an example:
 
-```
+```wl
 declare x and set it to 1
 if x is 0, then
   print "Hello World"
@@ -21,7 +37,7 @@ The above example is only an idea. Of course no one wants to write a long statem
 
 Here are a few other ideas:
 
-```
+```wl
 // Idea 1
 
 make x, set to 1
@@ -92,3 +108,7 @@ set meaning_of_life to 42
 ```
 
 Of course this is all just an idea. I don't even know how to make a programming language so this might stay an idea.
+
+
+
+Idk why but the syntax highlighting looks nice. Idk what lang uses that syntax highlighting but ok.
