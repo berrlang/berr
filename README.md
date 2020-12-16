@@ -39,7 +39,7 @@ The above example is only an idea. Of course no one wants to write a long statem
 
 Here are a few other ideas:
 
-```wl
+```br
 // Idea 1
 
 make x, set to 1
@@ -113,4 +113,5 @@ Of course this is all just an idea. I don't even know how to make a programming 
 
 
 
-Idk why but the syntax highlighting looks nice. Idk what lang uses that syntax highlighting but ok.
+
+
