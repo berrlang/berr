@@ -1,5 +1,4 @@
-# senta-lang
-Definitely no relation between Santa and sentence...  
+# new programming language that I need a name for
 Programming language that you type sentences ?
 
 The idea is that it's all typed out like you are talking, or, more like writing.  
