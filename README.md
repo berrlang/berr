@@ -27,7 +27,7 @@ I want to avoid the use of : ; ( ) { } as much as possible
 
 Only an idea but here is an example:
 
-```wl
+```br
 declare x and set it to 1
 if x is 0, then
   print "Hello World"
