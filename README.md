@@ -1,4 +1,5 @@
-# new-programming-lang
+# senta-lang
+Definitely no relation between Santa and sentence...  
 Programming language that you type sentences ?
 
 The idea is that it's all typed out like you are talking, or, more like writing.  
