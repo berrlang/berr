@@ -1,6 +1,8 @@
 # new programming language that I need a name for
 Programming language that you type sentences ?
 
+Syntax is kind of simillar to python and possibly javascript
+
 ### To Do
 - Come up with a name
 - Finalize the syntax
