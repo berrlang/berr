@@ -1,14 +1,15 @@
-# new programming language that I need a name for
+# berr
+Welcome to the berr programming lang.  
 Programming language that you type sentences ?
 
 Syntax is kind of simillar to python and possibly javascript
 
 ### To Do
-- Come up with a name
-- Finalize the syntax
-- Figure out what programming language to write the compiler/interpreter in
-- Figure out if the lang is compiled or interpreted or both
-- Low or high level
+- [x] Come up with a name
+- [ ] Finalize the syntax
+- [ ] Figure out what programming language to write the compiler/interpreter in
+- [ ] Figure out if the lang is compiled or interpreted or both
+- [ ] Low or high level
 
 ### Whats so nice about this?
 I dont know yet but here is what I can try to follow
