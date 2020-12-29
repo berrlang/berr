@@ -108,6 +108,25 @@ name meaning_of_life is 1
 name meaning_of_life be 1
 set meaning_of_life to 42
 
+
+
+// More wordy idea
+
+// Indentation is not required but makes it easier to read
+make a function named sum with (a as a number, b as a number, c as a number or no value) that returns a number,
+
+  name x with a value of 0
+
+  set x to a plus b plus ?c
+  return x
+
+// there must be a return or end statement at the end of a function
+
+print the output of sum(10, 20)     // 30
+print the output of sum(10, 20, 30) // 60
+print sum(10, 20)                   // sum(10,20) => 30
+
+
 ```
 
 Of course this is all just an idea. I don't even know how to make a programming language so this might stay an idea.
