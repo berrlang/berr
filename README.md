@@ -1,5 +1,5 @@
 # berr
-Welcome to the berr programming lang.  
+Welcome to the berr programming language.  
 Programming language that you type sentences ?
 
 Syntax is kind of simillar to python and possibly javascript
@@ -7,9 +7,12 @@ Syntax is kind of simillar to python and possibly javascript
 ### To Do
 - [x] Come up with a name
 - [ ] Finalize the syntax
-- [ ] Figure out what programming language to write the compiler/interpreter in
-- [ ] Figure out if the lang is compiled or interpreted or both
+- [x] Figure out what programming language to write the compiler/interpreter in
+- [x] Figure out if the lang is compiled or interpreted or both
 - [ ] Low or high level
+
+I plan to write berr in [scrap](https://github.com/scrap-lang/scrap)  
+berr will be both compiled and interpreted but the compiler will be made first.
 
 ### Whats so nice about this?
 I dont know yet but here is what I can try to follow
@@ -25,6 +28,73 @@ Truly going to be hard to make a language like this, but it's worth a try.
 
 
 I want to avoid the use of : ; ( ) { } as much as possible
+
+```br
+// Strings
+
+// this would print the string
+print "This is a string"
+// you can do this but its not reccomended
+print This is a string
+
+
+// combine two strings
+name ins be "Hello " + "World!"  // "Hello World!"
+
+// hate the fact you have to add spaces?
+name berr be "Hello" +: "World!" // "Hello World!"
+
+// Variables
+
+// declare a variable 'ins' with an inital value of 3
+name ins be 3
+// you can also set a type and that variable can only ever be that type
+name ins be 3 type int
+
+// you can change the value of the var
+set ins to 5
+// set is not required but makes it more obvius whats happening
+ins to 9
+
+
+// keywords like 'to' and 'be' can be replaced with an '=' if you prefer that
+name ins = 6
+set ins = 9
+// same as
+name ins be 6
+set ins to 9
+
+
+// variables are muteable by default
+// you can put unm
+name unm berr be 5
+// attempting to change the value of 'berr' will throw an error
+set berr to 7 // error
+
+
+// to create a function start with 'make'
+make myFunction with (name, age, city) that returns 1 value,
+  return "Hello @name. I see you are @age years old! You live in @city"
+
+/*
+a wordy description of whats happening
+'make' a function named 'myFunction' 'with' the parameters '(name, age, city)' 'that' 'returns' '1' 'value',
+  in this function 'return' 1 value, '"Hello @name, you are @age, you live in @city"'
+*/
+
+
+// here is where things get a bit complex
+// a function does not have to have its operations indented
+// however if you do not indent make sure there is a 'return' or 'end' statement
+
+
+
+
+```
+
+
+
+**old examples**  
 
 Only an idea but here is an example:
 
