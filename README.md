@@ -43,6 +43,10 @@ name ins be "Hello " + "World!"  // "Hello World!"
 
 // hate the fact you have to add spaces?
 name berr be "Hello" +: "World!" // "Hello World!"
+// to add more than one space
+name berr be "Hello" +:3 "World!" // "Hello   World!"
+
+
 
 // Variables
 
@@ -71,6 +75,8 @@ name unm berr be 5
 // attempting to change the value of 'berr' will throw an error
 set berr to 7 // error
 
+
+// Functions
 
 // to create a function start with 'make'
 make myFunction with (name, age, city) that returns 1 value,
