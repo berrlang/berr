@@ -30,6 +30,83 @@ Truly going to be hard to make a language like this, but it's worth a try.
 I want to avoid the use of : ; ( ) { } as much as possible
 
 ```br
+/*
+  TODO
+  
+  syntax for what functions return
+  syntax for the end of statements (. probably)
+  other crazy ideas for things i wish were built into programming languages
+
+*/
+
+// Types
+
+string
+
+int
+float
+number
+
+hex
+byte
+
+array
+json
+// maybe some others like yaml
+
+any
+none
+empty
+void
+
+enum
+struct
+class
+
+
+=
+==
+!=
+?
+??
+&&
+||
+!!
+<
+<=
+>
+>=
+>
+^
+/
+*
+%
++
+-
++:
+
++=
+/=
+-=
+*=
+
+++
+--
+**
+// // looks like a comment.. but its not. hmmm
+
+\regex\g
+
+{ name: "insberr", { what: "nothing" } }
+{ hi: (a, b, c) { print "hello world. and hello @in.name " + a + b + c }, name: "insberr" }
+
+0123456789
+
+$debug, print "debugging"
+
+
+
+
 // Strings
 
 // this would print the string
@@ -47,6 +124,21 @@ name berr be "Hello" +: "World!" // "Hello World!"
 name berr be "Hello" +:3 "World!" // "Hello   World!"
 
 
+// increment a string
+name planet be "mars".
+planet++
+// planet --> "marsmars"
+
+// increment 5 times
+planet++:5
+// planet --> "marsmarsmarsmarsmarsmarsmarsmarsmarsmarsmarsmars"
+
+// increment x times
+name x be 2
+set planet to "mars"
+planet++:x
+// planet --> "marsmarsmars"
+
 
 // Variables
 
@@ -57,7 +149,7 @@ name ins be 3 type int
 
 // you can change the value of the var
 set ins to 5
-// set is not required but makes it more obvius whats happening
+// set is not required but makes it easier to see whats happening
 ins to 9
 
 
@@ -78,9 +170,29 @@ set berr to 7 // error
 
 // Functions
 
+// im still deciding on the "what the function returns" syntax
+// so it is a bit confusing
+
+// functions are global in their scope.
+//function definition placement does not matter
+// this means
+
+print run hello("world").
+make hello with (input), return "hello @input".
+
+// will print "hello world"
+// and
+
+make hello with (input), return "hello @input".
+print run hello("world")
+
+// will print "hello world"
+
+
+
 // to create a function start with 'make'
-make myFunction with (name, age, city) that returns 1 value,
-  return "Hello @name. I see you are @age years old! You live in @city"
+make myFunction with (name, age, city),
+  return "Hello @name. I see you are @age years old! You live in @city".
 
 /*
 a wordy description of whats happening
@@ -92,8 +204,24 @@ a wordy description of whats happening
 // here is where things get a bit complex
 // a function does not have to have its operations indented
 // however if you do not indent make sure there is a 'return' or 'end' statement
+make hello with (input),
+print "hello @input"
+end
+
+// you can also use curly braces (indent not required)
+make hello with (input) {
+  print "hello @input"
+}
 
 
+
+
+
+// one line code, useful for minifying code
+// simple, just add a '.' to the end
+
+// one line functions do not need a 'return' or 'end' but do require a '.'
+name ins be "ins". print "hello berr". make world with (a), print "a".
 
 
 ```
