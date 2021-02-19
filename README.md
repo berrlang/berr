@@ -29,18 +29,15 @@ Truly going to be hard to make a language like this, but it's worth a try.
 
 I want to avoid the use of : ; ( ) { } as much as possible
 
+
+TODO
+- Syntax for what functions return
+- Syntax for the end of statements (. probably)
+- other crazy ideas for things I wish were built into programming languages
+
+
+#### Types
 ```br
-/*
-  TODO
-  
-  syntax for what functions return
-  syntax for the end of statements (. probably)
-  other crazy ideas for things i wish were built into programming languages
-
-*/
-
-// Types
-
 string
 
 int
@@ -52,6 +49,7 @@ byte
 
 array
 json
+bdm
 // maybe some others like yaml
 
 any
@@ -62,8 +60,10 @@ void
 enum
 struct
 class
+```
 
-
+#### Symbols
+```br
 =
 ==
 !=
@@ -103,56 +103,100 @@ class
 0123456789
 
 $debug, print "debugging"
+```
 
 
+#### Strings
 
-
-// Strings
-
-// this would print the string
+This will print a string
+```br
 print "This is a string"
-// you can do this but its not reccomended
-print This is a string
+```
+
+Combineing strings
+```br
+name ins be "Hello " + "World!"
+```
+
+Hate adding the space? Add a `:` after the `+` to make it do it for you
+```br
+name berr be "Hello" +: "World!"
+```
+`"Hello World"`
+
+And to add more than one space add the number of spaces you want after the `:`
+```br
+name berr be "Hello" +:3 "World!"
+```
+`"Hello   World"`
 
 
-// combine two strings
-name ins be "Hello " + "World!"  // "Hello World!"
-
-// hate the fact you have to add spaces?
-name berr be "Hello" +: "World!" // "Hello World!"
-// to add more than one space
-name berr be "Hello" +:3 "World!" // "Hello   World!"
-
-
-// increment a string
-name planet be "mars".
+Increment strings
+```br
+name planet be "mars "
 planet++
-// planet --> "marsmars"
+```
+`planet` = `"mars mars"`
 
-// increment 5 times
+Increment more than once by adding `:n` after the `++`
+```br
+name planet be "mars"
 planet++:5
-// planet --> "marsmarsmarsmarsmarsmarsmarsmarsmarsmarsmarsmars"
+```
+`planet` = `"mars mars mars mars mars mars"`
 
-// increment x times
+Increment a `n` amount of times from the value of a variable
+```br
 name x be 2
-set planet to "mars"
+name planet be "mars "
 planet++:x
-// planet --> "marsmarsmars"
+```
+`planet` = `"mars mars mars"`
 
 
-// Variables
+#### Variables
 
-// declare a variable 'ins' with an inital value of 3
+Declare a variable with the `name` keyword
+```br
+name ins
+```
+
+Declare a variable with an inital value using `be` or `=`
+The `be` keyword is preferred over `=` and `be` will be used for the rest of the syntax ideas
+```br
 name ins be 3
-// you can also set a type and that variable can only ever be that type
-name ins be 3 type int
+name berr = 4
+```
 
-// you can change the value of the var
+You cannot declare a variable under the same name more than once as it will cause an error
+```br
+name ins be 4
+name ins be 7
+```
+`compile time error: cannot declare 'ins' twice`
+
+You can set the variable value type and that variable can only ever be that type
+```br
+name ins type int
+// or with an inital value
+name berr be 4 type int
+```
+
+To change the value of a variable use `set`
+```br
+name ins be 6
+
 set ins to 5
-// set is not required but makes it easier to see whats happening
+```
+
+`set` is not required but makes it easier to see whats happening
+```br
 ins to 9
+```
 
 
+------
+```br
 // keywords like 'to' and 'be' can be replaced with an '=' if you prefer that
 name ins = 6
 set ins = 9
