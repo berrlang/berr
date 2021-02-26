@@ -211,33 +211,44 @@ name unm berr be 5
 // attempting to change the value of 'berr' will throw an error
 set berr to 7 // error
 
+```
 
-// Functions
+#### Functions
 
-// im still deciding on the "what the function returns" syntax
-// so it is a bit confusing
+Im still deciding on the "what the function returns" syntax
+so it is a bit confusing
 
-// functions are global in their scope.
-//function definition placement does not matter
-// this means
+functions are global in their scope.
+function definition placement does not matter
+this means
 
+```br
 print run hello("world").
-make hello with (input), return "hello @input".
-
-// will print "hello world"
-// and
-
-make hello with (input), return "hello @input".
+make hello with (input), return "hello @input"
+```
+and
+```br
+make hello with (input), return "hello @input"
 print run hello("world")
+```
+will print "hello world"
 
-// will print "hello world"
 
+Use the `make` keyword to create a function
+```br
+make my_function,
+{
+  print "Hello world"
+}
+```
 
+```br
+make my_function,
+print "Hello World" // period can go here
+. // or here
+```
 
-// to create a function start with 'make'
-make myFunction with (name, age, city),
-  return "Hello @name. I see you are @age years old! You live in @city".
-
+```br
 /*
 a wordy description of whats happening
 'make' a function named 'myFunction' 'with' the parameters '(name, age, city)' 'that' 'returns' '1' 'value',
