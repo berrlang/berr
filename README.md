@@ -385,7 +385,18 @@ print the output of sum(10, 20)     // 30
 print the output of sum(10, 20, 30) // 60
 print sum(10, 20)                   // sum(10,20) => 30
 
+```
 
+```
+declare age as number.
+
+ask "How old are you?" -> set age to it.
+ask "How old are you?" -(input)> set age to input.
+
+set age to output of ask "How old are you?".
+set age to (ask "How old are you?").
+
+if age is 0
 ```
 
 Of course this is all just an idea. I don't even know how to make a programming language so this might stay an idea.
